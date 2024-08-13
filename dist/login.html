@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <section class="login flex justify-center items-center flex-col h-screen ">
+    <div class="container flex flex-col  items-center sm:w-96 md:w-fit p-5 bg-slate-100 shadow-lg shadow-red-300 border-4 border-blue-100 sm:my-10 sm:mx-auto md:m-40 ">
+    <img src="../image/curt_image_login.png" class="object-cover w-36 bg-slate-100 shadow-md shadow-red-300"  alt="" srcset="">
+    <h1 class="  text-xl md:text-2xl lg:text-4xl text-red-400 font-bold m-5">Curt Inventory Management </h1>
+    <div class="explore flex justify-center items-center w-96  mx-5 mb-5 ">
+        <a href="../dist/dashboard.html" class="inline-block text-blue-500 text-xl cursor-pointer border-b-2 border-red-400 pb-1 hover:text-red-400 hover:transition-all hover:transition-duration: 300ms; ">for test login</a>
+    </div>
+    <form  id="loginForm" class="m-5 mt-0 p-4 bg-green-50 w-full shadow-md border-4 border-rose-100">
+        <div class="form-group flex flex-col gap-2 mb-4">
+            <label for="username" class="text-sm">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username " required class="bg-slate-100 p-2 border-rose-500 border-2 rounded-lg">
+        </div>
+        <div class="form-group flex flex-col gap-2 mb-4">
+            <label for="password" class="text-sm">Password</label>
+            <div class="flex  ">
+                <input type="password" name="password" id="password" placeholder="Password" required class=" bg-slate-100 p-2 border-rose-500 border-2 rounded-lg w-4/6">
+                <div class="flex items-center w-2/6 ml-2 ">
+                <input type="checkbox" name="show" id="show" class="mx-2 cursor-pointer"><span>show password</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn flex justify-center items-center ">
+            <button type="submit"  id="reg"  class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Log In</button>
+            <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "><a href="../dist/sign_in.html">Sign Up</a></button>
+        </div>
+        <div class="flex justify-center items-center mt-5">
+            <a href="../dist/forget.html" class="text-blue-400 border-b-2 border-blue-200 cursor-pointer">Having trouble log in? </a>
+        </div>
+    </form>
+
+
+
+
+    </section>
+
+    <script src="../dist/logic_login.js"></script>
+</body>
+</html>

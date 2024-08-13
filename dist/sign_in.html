@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="/dist/signin.css">
+</head>
+<body>
+    <section class="h-screen py-20 flex justify-center items-center">
+        <form class="container flex flex-col w-4/6 justify-center items-center bg-slate-100 shadow-md shadow-red-200 border-2 border-cyan-200">
+            <img src="../image/curt_image_login.png" alt="" srcset="" class="object-cover w-36 bg-slate-100 shadow-md shadow-red-300 my-5">
+            <label for="username " class="self-center">User Name</label>
+            <input type="text" name="username" placeholder="Username " id="username" required class=" bg-slate-100 p-2 border-rose-500 border-2 rounded-lg w-2/6 mb-5 mt-1" ></input>
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password " id="password" required class=" bg-slate-100 p-2 border-rose-500 border-2 rounded-lg w-2/6 mb-5 mt-1"></input>
+<!-- 
+            <label for="password">Confirm Password</label>
+            <input type="password" placeholder="Password " required class=" bg-slate-100 p-2 border-rose-500 border-2 rounded-lg w-2/6 mb-5 mt-1"></input> -->
+
+            <button type="submit"  id="reg" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Sign Up</button>
+            
+        </form>
+    </section>
+</body>
+
+<script src="../dist/signin_logic.js"></script>
+</html>

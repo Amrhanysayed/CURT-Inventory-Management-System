@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="">
+    <main class="block md:grid md:grid-cols-4">
+        <nav class="md:h-screen  md:col-span-1  bg-green-100 bg-opacity-50 md:w-full ">
+            <div class="logo flex justify-between items-center mb-5 border-b-2 border-rose-500 p-3 ">
+                <img src="../image/curt_image_login.png" alt="" class="object-cover w-12 bg-slate-100 shadow-md shadow-red-300">
+                <h1 class="font-bold">Curt Inventory Management</h1>
+                <i class='bx bxs-cog text-red-600 text-xl setting'> </i>
+            </div>
+            <ul class="    flex md:flex-col  bg-red-200 w-full">
+                <li class="   flex justify-center items-center   md:inline-block border-r-2 md:border-r-0 p-2  border-b-2 border-cyan-300 w-full font-bold hover:-translate-y-1 text-orange-400 "><a href="" class="w-full text-center">Dashboard</a></li>
+                <li class="   flex justify-center items-center   md:inline-block border-r-2 md:border-r-0 p-2 border-b-2 border-cyan-300 w-full font-bold hover:-translate-y-1"> <a href=""> Suppliers</a></li>   
+                <li class="   flex justify-center items-center   md:inline-block   p-2  border-b-2 border-cyan-300 w-full font-bold hover:-translate-y-1" > <a href=""> Orders</a></li>
+            </ul>
+        </nav>
+
+
+    <section class="md:col-span-3 md:ml-5 overflow-y-auto max-h-screen">
+        <div class="dashboard-header">
+            <h1 class="text-center mt-5 mb-10 text-3xl font-bold">Welcome,Hany</h1>
+            <div class="boxs grid sm:grid-cols-1 md:grid-cols-2">
+                <div class="box flex justify-evenly items-center flex-col  shadow-md shadow-red-200 mb-5 md:mb-0  mr-3 pb-2">
+                    <i class='bx bx-cart text-6xl bg-rose-500 text-white rounded-md bg-opacity-90'></i>
+                    <h2 class="font-semibold my-5">Orders</h2>
+                    <p class="mb-5">Manage customer purchases and track sold items.</p>
+                    <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"><a href="">Create order</a></button>
+                </div>
+                <div class="box flex justify-evenly items-center flex-col  shadow-md shadow-red-200 pb-2">
+                    <i class='bx bxs-factory text-6xl bg-rose-500 text-white rounded-md bg-opacity-90'></i>
+                    <h2 class="font-semibold my-5">Suppliers</h2>
+                    <p class="mb-5">Keep detailed records of your suppliers..</p>
+                    <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"><a href="">Manage suppliers</a></button>
+                </div>
+            </div>
+        </div>
+
+    <div class="mt-24">
+        <div class="flex flex-wrap mb-4 items-center justify-around  ">
+            <h2 class="text-2xl ">Stock count</h2>
+            <button type="button" class="   add_btn   text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2  ">Add item</button>
+            <div class="input_list z-10 hidden " var="true">
+                <input type="text"   placeholder=" Name " class="p_name border-2 border-red-300 rounded-lg mr-4" required>
+                <input type="text"   placeholder="Type " class="p_color border-2  border-red-300 rounded-lg mr-4" required>
+                <input type="text"   placeholder="Description " class="p_Category border-2  border-red-300 rounded-lg mr-4" required>
+                <input type="number" placeholder="Quantity " class="p_price border-2  border-red-300 rounded-lg" required>
+            </div>
+        </div>
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50  ">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Type
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Description
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Quantity
+                </th>
+                <th scope="col" class="px-6 py-3" >
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody class="tablebody">
+        
+        </tbody>
+    </table>
+</div>
+
+    </div>
+
+
+    </section>
+
+
+    </main>
+<script src="../dist/logic_daskboard.js"></script>
+
+</body>
+</html>
+
+
